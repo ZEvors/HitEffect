@@ -1,0 +1,38 @@
+database:
+  type: mysql
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: password
+  database: mydatabase
+
+effects:
+  heart:
+    price: 10000
+    button: "Love Heart"
+    permission: hiteffect.heart
+
+  ink:
+    price: 12000
+    button: "Ink Splash"
+    permission: hiteffect.ink
+
+  flame:
+    price: 15000
+    button: "Fire Trail"
+    permission: hiteffect.flame
+
+  lava:
+    price: 20000
+    button: "Lava Spark"
+    permission: hiteffect.lava
+
+  water:
+    price: 11000
+    button: "Water Drop"
+    permission: hiteffect.water
+
+  smoke:
+    price: 18000
+    button: "Smoke Burst"
+    permission: hiteffect.smoke
