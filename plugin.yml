@@ -1,0 +1,21 @@
+name: HitEffect
+version: 1.0.0
+api: 5.0.0
+main: VsrStudio\HitEffect\Main
+author: VsrStudio
+description: HitEffect CubeOcean Mysql Support
+
+depend:
+  - CoinAPI
+  - libasynql
+  - FormAPI
+
+commands:
+  hiteffect:
+    description: Buka menu
+    usage: /hiteffect
+    permission: hiteffect.command
+
+permissions:
+  hiteffect.command:
+    default: true
