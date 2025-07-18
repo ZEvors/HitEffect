@@ -5,7 +5,7 @@ main: VsrStudio\HitEffect\Main
 author: VsrStudio
 description: HitEffect CubeOcean Mysql Support
 
-depend:
+softdepend:
   - CoinAPI
   - libasynql
   - FormAPI
@@ -19,3 +19,15 @@ commands:
 permissions:
   hiteffect.command:
     default: true
+  hiteffect.heart:
+    default: op
+  hiteffect.ink:
+    default: op
+  hiteffect.flame:
+    default: op
+  hiteffect.lava:
+    default: op
+  hiteffect.water:
+    default: op
+  hiteffect.smoke:
+    default: op
