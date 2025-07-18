@@ -45,9 +45,9 @@ class Main extends PluginBase implements Listener {
 
         if ($cmd->getName() === "hiteffect") {
             if (isset($args[0]) && strtolower($args[0]) === "owned") {
-                $this->openOwnedForm($sender);
+                $this->openHitOwnedForm($sender);
             } else {
-                $this->openShopForm($sender);
+                $this->openHitShopForm($sender);
             }
             return true;
         }
@@ -96,7 +96,7 @@ class Main extends PluginBase implements Listener {
         });
     }
 
-    public function openShopForm(Player $player): void {
+    public function openHitShopForm(Player $player): void {
         $name = strtolower($player->getName());
 
         $this->database->executeSelect("hit.load", ["name" => $name], function(array $rows) use ($player) {
@@ -147,7 +147,7 @@ class Main extends PluginBase implements Listener {
         });
     }
 
-    public function openOwnedForm(Player $player): void {
+    public function openHitOwnedForm(Player $player): void {
         $name = strtolower($player->getName());
 
         $this->database->executeSelect("hit.load", ["name" => $name], function(array $rows) use ($player) {
