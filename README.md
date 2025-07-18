@@ -1,5 +1,5 @@
 # HitEffect
-HitEffect PVP MiniGames Server CubeOcean
+HitEffect Public Plugin MiniGames Server CubeOcean
 
 ### Fitur
 - Support Libasynql, CoinAPI, FormAPI (Mendukung Libasynql, CoinAPI, FormAPI)
